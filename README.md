@@ -1,5 +1,11 @@
 # bitzeny-batgen
 
+Generate command of BAT file for BitZeny.
+
+supported: pool mining, solo mining
+
+(Original: https://github.com/koki-koba/zeny)
+
 > A Vue.js project
 
 ## Build Setup
