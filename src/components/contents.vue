@@ -34,7 +34,7 @@
         </el-radio-group>
       </el-form-item>
       <template v-if="type === 'pool'">
-        <el-form-item label="Pool">
+        <el-form-item label="Pool" required>
           <el-select v-model="value.pool" placeholder="Please select pool" style="width: 100%">
             <el-option-group
               v-for="group in poollist"
@@ -66,7 +66,7 @@
         </el-select>
       </el-form-item>
       <template v-if="type === 'pool'">
-        <el-form-item label="Pool Username">
+        <el-form-item label="Pool Username" required>
           <el-input placeholder="user" v-model="value.user"></el-input>
         </el-form-item>
         <el-form-item label="Workername">
@@ -74,11 +74,11 @@
         </el-form-item>
       </template>
       <template v-if="type !== 'pool'">
-        <el-form-item label="Username">
+        <el-form-item label="Username" required>
           <el-input placeholder="user" v-model="value.user"></el-input>
         </el-form-item>
       </template>
-      <el-form-item label="Password">
+      <el-form-item label="Password" required>
         <el-input placeholder="password" v-model="value.password"></el-input>
       </el-form-item>
     </el-form>
